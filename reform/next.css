@@ -1,0 +1,357 @@
+html, body {
+  margin: 0;
+  width: 100%;
+  background: url(next.img/all_background.jpg);
+  background-size: contain;
+  font-family: 'Bookman Old Style', arial;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container h1 {
+  text-shadow: 1px 1px 2px #111;
+}
+
+.container li {
+  list-style: square;
+  font-size: 1.1rem;
+}
+
+.container .section {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px #555;
+}
+
+.container .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.container .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container .option p {
+  width: 200px;
+  margin: auto 30px;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #000;
+  border-radius: 50%;
+  border: solid 2px rgba(165, 42, 42, 0.7);
+}
+
+.container .option ul {
+  padding: 15px;
+  margin: auto 0;
+}
+
+.container .reform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 650px;
+  margin: 0 auto;
+}
+
+.container .reform .all {
+  font-size: 1.3rem;
+  margin-left: 20px;
+  width: 300px;
+  text-align: center;
+  font-size: 1.4rem;
+  height: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.container .reform .bath_list ul {
+  padding: 20px;
+}
+
+.container .reform .bath_2 {
+  width: 250px;
+  margin: auto 30px;
+  border-radius: 50%;
+  padding: 20px 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  border: solid 2px rgba(165, 42, 42, 0.7);
+}
+
+.room p {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.kitchen p {
+  background-color: skyblue;
+}
+
+.bath .bath_1 {
+  background-color: rgba(0, 128, 0, 0.5);
+}
+
+.bath div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wash p {
+  background-color: rgba(255, 255, 0, 0.7);
+}
+
+.toilet p {
+  background-color: pink;
+}
+
+footer .last_box {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .last_box div {
+  margin: auto 0;
+}
+
+footer .info {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+footer .info li {
+  list-style: none;
+  line-height: 3rem;
+}
+
+footer .info a {
+  text-decoration: none;
+  color: #000;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+footer .info p {
+  width: 220px;
+  margin: 50px auto;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 3px;
+  border: solid 2px rgba(165, 42, 42, 0.7);
+}
+
+footer .info span {
+  font-style: italic;
+}
+
+footer .info .sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+footer .info .sns a {
+  margin: 0 0 0 40px;
+  padding: 5px;
+  border: solid 2px rgba(165, 42, 42, 0.7);
+  border-radius: 5px;
+}
+
+footer p {
+  margin-top: 50px;
+}
+
+@media (max-width: 1024px) {
+  .container p {
+    font-size: 1.1rem;
+  }
+  .container li {
+    font-size: 1rem;
+  }
+  .container .option p {
+    font-size: 1rem;
+  }
+  .container .reform .bath_2 {
+    width: 200px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .reform .bath_2 {
+    width: 230px;
+    font-size: 0.8rem;
+  }
+  .container .option p {
+    width: 180px;
+    font-size: 0.8rem;
+  }
+  footer .last_box {
+    width: 90%;
+  }
+  footer .last_box .info a {
+    font-size: 1rem;
+  }
+  footer .last_box .info p {
+    font-size: 1rem;
+  }
+  footer p {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 414px) {
+  .container h1 {
+    margin: 20px auto 80px auto;
+  }
+  .container .section {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .container .option {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .container .option img {
+    margin: 0 auto;
+  }
+  .container .option p {
+    font-size: 1rem;
+    padding: 5px;
+    margin: 20px auto;
+  }
+  .container .option ul {
+    width: 100%;
+    padding: 0;
+    margin: 20px;
+  }
+  .container .option ul li {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .container .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .container .box img {
+    margin: 20px auto;
+  }
+  .container .border {
+    width: 100%;
+  }
+  .container .reform {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .container .reform ul {
+    width: 100%;
+    padding: 0 0 0 20px;
+  }
+  .container .reform .all {
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    top: -40px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .container .reform .bath_list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .reform .bath_list ul {
+    padding: 0 0 0 20px;
+    margin-bottom: 0;
+  }
+  .container .reform .bath_list .bath_2 {
+    font-size: 1rem;
+    margin: 20px auto;
+    padding: 5px;
+  }
+  .container .option p {
+    margin: -20px auto 0 auto;
+  }
+  footer .last_box {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .last_box div {
+    margin: 0 auto;
+  }
+  footer .last_box div img {
+    width: 250px;
+    height: auto;
+  }
+  footer .info {
+    width: 100%;
+  }
+  footer .info .sns a {
+    margin: 0 20px;
+  }
+  footer .info p {
+    margin: 30px auto 20px auto;
+  }
+  footer .info ul {
+    padding: 0;
+  }
+  footer .info ul li {
+    line-height: 2rem;
+  }
+  footer .info a {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+
+footer p {
+  width: 100%;
+  text-align: center;
+  color: #666;
+}
